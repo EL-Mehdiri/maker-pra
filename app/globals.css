@@ -1,27 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --color-primary: #3EE9E5;
+  --secondary: #093F68;
+  --darker: #080C20;
+  --therd: #777F98;
+  --whiteColor: #ffffff;
+  --font-family: 'Manrope', sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--font-family);
+  background-color: var(--darker);
+  transition: 1.5s all ease-in-out;
+}
+
+.heading {
+  color: #FFF;
+
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px;
+}
+
+.headingTwo {
+  color: #FFF;
+
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+
+}
+
+.headingThree {
+  color: #FFF;
+
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.headingFour {
+  color: #FFF;
+
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+.paragraph {
+
+  font-family: var(--font-family);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.bgg {
+  background-image: url('/images/Group\ 6ff.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.footerbg {
+  background-image: url('/images/Path 3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.introbtn {
+  animation: animat 2s linear infinite;
+}
+
+@keyframes animat {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(16px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
