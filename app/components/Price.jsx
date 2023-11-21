@@ -2,13 +2,13 @@ import React from 'react'
 
 const Price = () => {
     return (
-        <section className='container px-[95px]'>
+        <section className='container md:px-[95px] px-4'>
             <div className='text-center mb-[72px]'>
                 <div className='headingThree pb-[24px]'>Our pricing plans</div>
                 <div className='text-therd paragraph'>We only make money when our creators make money. Our plans are always <br /> affordable, and it&apos;s completely free to get started.</div>
             </div>
 
-            <div className='grid grid-cols-2 gap-[36px] items-center'>
+            <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-[36px] gap-[65px] items-center'>
                 <div className='py-[49px] relative px-[38px] bg-secondary rounded-[8px]'>
                     <svg className='absolute -top-5' xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2318 28.7027H44.4318C45.0895 28.7027 45.6227 28.1673 45.6227 27.5068V1.19595C45.6227 0.535443 45.0895 0 44.4318 0H18.2318C17.5741 0 17.0409 0.535443 17.0409 1.19595V27.5068C17.0409 28.1673 17.5741 28.7027 18.2318 28.7027ZM43.2409 26.3108H19.4227V2.39189H43.2409V26.3108Z" fill="#3EE9E5" />

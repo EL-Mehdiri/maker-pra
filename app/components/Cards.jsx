@@ -27,12 +27,14 @@ const Cards = () => {
         },
     ]
     return (
-        <section className='container grid grid-cols-4'>
+        <section className='container grid lg:grid-cols-4 md:grid-cols-1 lg:gap-0 md:gap-[40px] gap-[56px]'>
             {content.map((item, index) => (
-                <div key={index} className={`mt-[${item.mt}]`} >
-                    <Image src={item.img} width={160} height={160} alt='...' />
-                    <div className='headingFour pt-[48px] pb-[24px]'>{item.title}</div>
-                    <div className='text-therd w-[260px]'>{item.description}</div>
+                <div key={index} className={` ${item.mt && 'lg:mt-[48px] lg:ml-0 md:ml-[48px] md:mt-0'}  lg:block md:flex gap-[55px] text-center md:text-left`} >
+                    <Image src={item.img} width={160} height={160} alt='...' className='m-auto md:m-0' />
+                    <div>
+                        <div className='headingFour pt-[48px] pb-[24px]'>{item.title}</div>
+                        <div className='text-therd lg:w-[260px] md:w-[500px]'>{item.description}</div>
+                    </div>
                 </div>
             ))}
         </section>
