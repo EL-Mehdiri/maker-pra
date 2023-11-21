@@ -7,13 +7,6 @@ const Footer = () => {
     const [email, setEmail] = useState('');
     const [isValidEmail, setIsValidEmail] = useState(true);
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email))
-            return setIsValidEmail(false);
-        alert("Thank you for subscribing!");
-
-    }
 
     const handleEmailChange = (e) => {
         const inputEmail = e.target.value;
@@ -24,7 +17,7 @@ const Footer = () => {
     return (
         <footer className='py-[52px] footerbg px-4'>
             <div className='headingThree text-center mb-[42px] '>Get notified when we launch</div>
-            <form onSubmit={onSubmit}
+            <form onSubmit={(e) => e.preventDefault()}
                 className='flex flex-col md:flex-row justify-center items-center gap-[16px] w-full '>
                 <div className='flex flex-col'>
                     <input value={email}

@@ -2,10 +2,10 @@ import React from 'react'
 
 const Price = () => {
     return (
-        <section className='container md:px-[95px] px-4'>
+        <section className='container lg:px-[195px] md:px-[95px] px-4'>
             <div className='text-center mb-[72px]'>
                 <div className='headingThree pb-[24px]'>Our pricing plans</div>
-                <div className='text-therd paragraph'>We only make money when our creators make money. Our plans are always <br /> affordable, and it&apos;s completely free to get started.</div>
+                <div className='text-therd paragraph'>We only make money when our creators make money. Our plans are always <br className='hidden md:block' /> affordable, and it&apos;s completely free to get started.</div>
             </div>
 
             <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-[36px] gap-[65px] items-center'>
