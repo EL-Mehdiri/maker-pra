@@ -52,7 +52,7 @@ const Price = () => {
                     </svg>
                     <div className='mb-[19px] !text-black headingFour'>Dive right in</div>
                     <div className='text-therd paragraph'>Ready for the big time? Our paid plan will help you <br /> take your business to the next level.</div>
-                    <div className='mt-[24px] mb-[19px] headingTwo !text-black'>$25.00/ month</div>
+                    <div className='mt-[24px] mb-[19px] headingTwo !text-black relative'>$25.00<span className='text-therd paragraph absolute top-3'>/ month</span></div>
                     <ul className='space-y-[12px] text-black paragraph '>
                         <li className='flex gap-[15px] items-center '>
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9" fill="none">
